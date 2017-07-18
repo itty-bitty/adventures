@@ -15,7 +15,8 @@ export class AppComponent {
   ngOnInit() {
     this.items = [
       {
-        label: 'Home', icon: '',
+        label: 'Home', icon: 'fa-home',
+        routerLink: '/home',
 
       },
       {
@@ -23,14 +24,17 @@ export class AppComponent {
         items: [
           {
             label: 'Idaho',
+            routerLink : '/idaho'
           },
           {
             label: 'Utah',
-          },
+            routerLink: '/utah'
+          }
         ],
       },
       {
-        label: 'The Flying Machine', icon: '',
+        label: 'The Flying Machine', icon: 'fa-plane',
+        routerLink: '/'
       },
       {
         label: 'Camping', icon: '',
